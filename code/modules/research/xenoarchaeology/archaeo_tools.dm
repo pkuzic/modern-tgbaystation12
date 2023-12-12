@@ -1,7 +1,7 @@
 /obj/item/device/depth_scanner
 	name = "depth analysis scanner"
 	desc = "Used to check mass spatial depth and density."
-	icon = 'pda.dmi'
+	icon = 'icons/obj/pda.dmi'
 	icon_state = "crap"
 	item_state = "analyzer"
 	w_class = 1.0
@@ -25,7 +25,7 @@
 /obj/item/device/core_sampler
 	name = "core sampler"
 	desc = "Used to extract cores from geological samples."
-	icon = 'device.dmi'
+	icon = 'icons/obj/device.dmi'
 	icon_state = "core_sampler"
 	item_state = "screwdriver_brown"
 	w_class = 1.0
@@ -35,6 +35,6 @@
 /obj/item/device/beacon_locator
 	name = "locater device"
 	desc = "Used to scan and locate signals on a particular frequency."
-	icon = 'device.dmi'
+	icon = 'icons/obj/device.dmi'
 	icon_state = "pinoff"	//pinonfar, pinonmedium, pinonclose, pinondirect, pinonnull
 	item_state = "electronic"

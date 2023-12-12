@@ -165,7 +165,7 @@ var/global/list/damage_icon_parts = list()
 proc/get_damage_icon_part(damage_state, body_part)
 	if(damage_icon_parts["[damage_state]/[body_part]"] == null)
 		var/icon/DI = new /icon('icons/mob/dam_human.dmi', damage_state)			// the damage icon for whole human
-		DI.Blend(new /icon('dam_mask.dmi', body_part), ICON_MULTIPLY)		// mask with this organ's pixels
+		DI.Blend(new /icon('icons/mob/dam_mask.dmi', body_part), ICON_MULTIPLY)		// mask with this organ's pixels
 		damage_icon_parts["[damage_state]/[body_part]"] = DI
 		return DI
 	else
@@ -188,7 +188,7 @@ proc/get_damage_icon_part(damage_state, body_part)
 
 	previous_damage_appearance = damage_appearance
 
-	var/icon/standing = new /icon('dam_human.dmi', "00")
+	var/icon/standing = new /icon('icons/mob/dam_human.dmi', "00")
 	var/icon/lying = new /icon('dam_human.dmi', "00-2")
 
 	var/image/standing_image = new /image("icon" = standing)
@@ -260,27 +260,27 @@ proc/get_damage_icon_part(damage_state, body_part)
 				&& !istype(part, /datum/organ/external/chest) \
 				&& !istype(part, /datum/organ/external/head) \
 				&& !(part.status & ORGAN_DESTROYED))
-				var/icon/temp = new /icon('human.dmi', "[part.icon_name]_s")
+				var/icon/temp = new /icon('icons/mob/human.dmi', "[part.icon_name]_s")
 				if(part.status & ORGAN_ROBOT) temp.MapColors(rgb(77,77,77), rgb(150,150,150), rgb(28,28,28), rgb(0,0,0))
 				stand_icon.Blend(temp, ICON_OVERLAY)
-				temp = new /icon('human.dmi', "[part.icon_name]_l")
+				temp = new /icon('icons/mob/human.dmi', "[part.icon_name]_l")
 				if(part.status & ORGAN_ROBOT) temp.MapColors(rgb(77,77,77), rgb(150,150,150), rgb(28,28,28), rgb(0,0,0))
 				lying_icon.Blend(temp , ICON_OVERLAY)
 
-		stand_icon.Blend(new /icon('human.dmi', "groin_[g]_s"), ICON_OVERLAY)
-		lying_icon.Blend(new /icon('human.dmi', "groin_[g]_l"), ICON_OVERLAY)
+		stand_icon.Blend(new /icon('icons/mob/human.dmi', "groin_[g]_s"), ICON_OVERLAY)
+		lying_icon.Blend(new /icon('icons/mob/human.dmi', "groin_[g]_l"), ICON_OVERLAY)
 
 	if (husk)
-		var/icon/husk_s = new /icon('human.dmi', "husk_s")
-		var/icon/husk_l = new /icon('human.dmi', "husk_l")
+		var/icon/husk_s = new /icon('icons/mob/human.dmi', "husk_s")
+		var/icon/husk_l = new /icon('icons/mob/human.dmi', "husk_l")
 
 		for(var/datum/organ/external/part in organs)
 			if(!istype(part, /datum/organ/external/groin) \
 				&& !istype(part, /datum/organ/external/chest) \
 				&& !istype(part, /datum/organ/external/head) \
 				&& (part.status & ORGAN_DESTROYED))
-				husk_s.Blend(new /icon('dam_mask.dmi', "[part.icon_name]"), ICON_SUBTRACT)
-				husk_l.Blend(new /icon('dam_mask.dmi', "[part.icon_name]2"), ICON_SUBTRACT)
+				husk_s.Blend(new /icon('icons/mob/dam_mask.dmi', "[part.icon_name]"), ICON_SUBTRACT)
+				husk_l.Blend(new /icon('icons/mob/dam_mask.dmi', "[part.icon_name]2"), ICON_SUBTRACT)
 
 		stand_icon.Blend(husk_s, ICON_OVERLAY)
 		lying_icon.Blend(husk_l, ICON_OVERLAY)

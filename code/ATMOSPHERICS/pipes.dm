@@ -828,7 +828,7 @@ obj/machinery/atmospherics/pipe
 		icon_state = "manifold-y-f"
 
 	manifold4w
-		icon = 'pipe_manifold.dmi'
+		icon = 'icons/obj/atmospherics/pipe_manifold.dmi'
 		icon_state = "manifold4w-f"
 
 		name = "4-way pipe manifold"
@@ -930,7 +930,7 @@ obj/machinery/atmospherics/pipe
 
 			else
 				icon_state = "manifold4w_ex"
-				var/icon/con = new/icon('pipe_manifold.dmi',"manifold4w_con")
+				var/icon/con = new/icon('icons/obj/atmospherics/pipe_manifold.dmi',"manifold4w_con")
 
 				if(node1)
 					overlays += new/image(con,dir=1)
@@ -1050,7 +1050,7 @@ obj/machinery/atmospherics/pipe/attackby(var/obj/item/weapon/W as obj, var/mob/u
 		user << "\red You paint the pipe yellow."
 		update_icon()
 		return 1
-    
+
 	if (!istype(W, /obj/item/weapon/wrench))
 		return ..()
 	var/turf/T = src.loc

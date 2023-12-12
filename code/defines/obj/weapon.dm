@@ -520,7 +520,7 @@
 /obj/item/stack/medical
 	name = "medical pack"
 	singular_name = "medical pack"
-	icon = 'items.dmi'
+	icon = 'icons/obj/items.dmi'
 	amount = 5 //To compensate for wounds
 	max_amount = 5
 	w_class = 1
@@ -541,7 +541,7 @@
 	name = "\improper S'rendarr's Hand leaf"
 	singular_name = "S'rendarr's Hand leaf"
 	desc = "A soft leaf that is rubbed on bruises."
-	icon = 'harvest.dmi'
+	icon = 'icons/obj/harvest.dmi'
 	icon_state = "cabbage"
 	heal_brute = 7
 
@@ -558,7 +558,7 @@
 	name = "\improper Messa's Tear leaf"
 	singular_name = "Messa's Tear leaf"
 	desc = "A cold leaf that is rubbed on burns."
-	icon = 'harvest.dmi'
+	icon = 'iconss/obj/harvest.dmi'
 	icon_state = "ambrosiavulgaris"
 	heal_burn = 7
 
@@ -1635,14 +1635,14 @@
 
 /obj/item/weapon/bonegel
 	name = "bone gel"
-	icon = 'surgery.dmi'
+	icon = 'icons/obj/surgery.dmi'
 	icon_state = "bone-gel"
 	force = 0
 	throwforce = 1.0
 
 /obj/item/weapon/FixOVein
 	name = "FixOVein"
-	icon = 'surgery.dmi'
+	icon = 'icons/obj/surgery.dmi'
 	icon_state = "fixovein"
 	force = 0
 	throwforce = 1.0
@@ -1651,7 +1651,7 @@
 
 /obj/item/weapon/bonesetter
 	name = "bone setter"
-	icon = 'surgery.dmi'
+	icon = 'icons/obj/surgery.dmi'
 	icon_state = "bone setter"
 	force = 8.0
 	throwforce = 9.0

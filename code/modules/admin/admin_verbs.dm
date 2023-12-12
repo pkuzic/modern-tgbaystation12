@@ -502,7 +502,7 @@
 			mob.invisibility = INVISIBILITY_OBSERVER
 			mob << "\blue <b>Invisimin on. You are now as invisible as a ghost.</b>"
 			mob.icon_state = "ghost"
-			mob.icon = 'mob.dmi'
+			mob.icon = 'icons/mob/mob.dmi'
 
 
 /client/proc/player_panel()

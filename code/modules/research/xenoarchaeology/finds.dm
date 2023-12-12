@@ -9,7 +9,7 @@
 /obj/item/weapon/rocksliver
 	name = "rock sliver"
 	desc = "It looks extremely delicate."
-	icon = 'mining.dmi'
+	icon = 'icons/obj/mining.dmi'
 	icon_state = "sliver0"	//0-4
 	//item_state = "electronic"
 	var/source_rock = "/turf/simulated/mineral/archaeo"
@@ -107,7 +107,7 @@
 
 /obj/item/weapon/crystal
 	name = "Crystal"
-	icon = 'mining.dmi'
+	icon = 'icons/obj/mining.dmi'
 	icon_state = "crystal"
 
 /obj/item/weapon/crystal/bullet_act(var/obj/item/projectile/P)
@@ -138,7 +138,7 @@
 
 /obj/item/weapon/talkingcrystal
 	name = "Crystal"
-	icon = 'mining.dmi'
+	icon = 'icons/obj/mining.dmi'
 	icon_state = "crystal2"
 	var/list/list/words = list()
 	var/lastsaid
@@ -282,7 +282,7 @@
 
 /obj/item/weapon/fossil
 	name = "Fossil"
-	icon = 'fossil.dmi'
+	icon = 'icons/obj/fossil.dmi'
 	icon_state = "bone"
 	desc = "It's a fossil."
 
@@ -325,7 +325,7 @@
 
 /obj/skeleton
 	name = "Incomplete skeleton"
-	icon = 'fossil.dmi'
+	icon = 'icons/obj/fossil.dmi'
 	icon_state = "uskel"
 	desc = "Incomplete skeleton."
 	var/bnum = 1

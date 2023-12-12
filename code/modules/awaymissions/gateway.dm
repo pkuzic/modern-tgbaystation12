@@ -138,7 +138,7 @@ obj/machinery/gateway/centerstation/process()
 
 	world << "\red New subsystems update available at all communication consoles."
 
-	world << sound('commandreport.ogg')
+	world << sound('sound/AI/commandreport.ogg')
 	log_admin("The gateway has automatically activated.")
 	message_admins("The gateway has automatically activated and is ready for use. Warning: some trips may be one way, and others may be EXTREMELY hazardous.", 1)
 

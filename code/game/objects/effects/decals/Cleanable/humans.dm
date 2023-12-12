@@ -83,7 +83,7 @@
 	density = 0
 	anchored = 1
 	layer = 2
-	icon = 'blood.dmi'
+	icon = 'icons/effects/blood.dmi'
 	icon_state = "mucus"
 	random_icon_states = list("mucus")
 	var/datum/disease2/disease/virus2 = null

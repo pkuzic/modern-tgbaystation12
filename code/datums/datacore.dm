@@ -121,15 +121,15 @@ proc/get_id_photo(var/mob/living/carbon/human/H)
 		if("Skrell")
 			preview_icon = new /icon('icons/effects/species.dmi', "skrell_[g]_s")
 		else
-			preview_icon = new /icon('human.dmi', "torso_[g]_s")
-			preview_icon.Blend(new /icon('human.dmi', "chest_[g]_s"), ICON_OVERLAY)
-			preview_icon.Blend(new /icon('human.dmi', "groin_[g]_s"), ICON_OVERLAY)
-			preview_icon.Blend(new /icon('human.dmi', "head_[g]_s"), ICON_OVERLAY)
+			preview_icon = new /icon('icons/mob/human.dmi', "torso_[g]_s")
+			preview_icon.Blend(new /icon('icons/mob/human.dmi', "chest_[g]_s"), ICON_OVERLAY)
+			preview_icon.Blend(new /icon('icons/mob/human.dmi', "groin_[g]_s"), ICON_OVERLAY)
+			preview_icon.Blend(new /icon('icons/mob/human.dmi', "head_[g]_s"), ICON_OVERLAY)
 
 			for(var/datum/organ/external/E in H.organs)
 				if(E.status & ORGAN_CUT_AWAY) continue
 
-				var/icon/temp = new /icon('human.dmi', "[E.name]_s")
+				var/icon/temp = new /icon('icons/mob/human.dmi', "[E.name]_s")
 				if(E.status & ORGAN_ROBOT)
 					temp.MapColors(rgb(77,77,77), rgb(150,150,150), rgb(28,28,28), rgb(0,0,0))
 

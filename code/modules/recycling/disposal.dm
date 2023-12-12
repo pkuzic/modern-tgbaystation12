@@ -1343,5 +1343,5 @@
 	density = 0
 	anchored = 1
 	layer = 2
-	icon = 'drip.dmi'
+	icon = 'icons/effects/drip.dmi'
 	icon_state = "1"

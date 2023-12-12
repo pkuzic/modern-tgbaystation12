@@ -86,7 +86,7 @@
 
 /obj/item/weapon/camera_film
 	name = "film cartridge"
-	icon = 'items.dmi'
+	icon = 'icons/obj/items.dmi'
 	desc = "A camera film cartridge. Insert it into a camera to reload it."
 	icon_state = "film"
 	item_state = "electropack"
@@ -100,7 +100,7 @@
 /obj/item/weapon/camera_test/proc/get_icon(turf/the_turf as turf)
 	//Bigger icon base to capture those icons that were shifted to the next tile
 	//i.e. pretty much all wall-mounted machinery
-	var/icon/res = icon('96x96.dmi',"")
+	var/icon/res = icon('icons/effects/96x96.dmi',"")
 
 	var/icon/turficon = build_composite_icon(the_turf)
 	res.Blend(turficon,ICON_OVERLAY,33,33)
@@ -171,8 +171,8 @@
 	var/y_c = target.y + 1
 	var/z_c	= target.z
 
-	var/icon/temp = icon('96x96.dmi',"")
-	var/icon/black = icon('space.dmi', "black")
+	var/icon/temp = icon('icons/effects/96x96.dmi',"")
+	var/icon/black = icon('icons/turf/space.dmi', "black")
 	var/mobs = ""
 	for (var/i = 1; i <= 3; i++)
 		for (var/j = 1; j <= 3; j++)
@@ -196,7 +196,7 @@
 	if(!user.get_inactive_hand())
 		usr.put_in_inactive_hand(P)
 	var/icon/small_img = icon(temp)
-	var/icon/ic = icon('items.dmi',"photo")
+	var/icon/ic = icon('icons/obj/items.dmi',"photo")
 	small_img.Scale(8,8)
 	ic.Blend(small_img,ICON_OVERLAY,10,13)
 	P.icon = ic
@@ -204,7 +204,7 @@
 	P.desc = mobs
 	P.pixel_x = rand(-10,10)
 	P.pixel_y = rand(-10,10)
-	playsound(src.loc, pick('polaroid1.ogg','polaroid2.ogg'), 75, 1, -3)
+	playsound(src.loc, pick('sound/items/polaroid1.ogg','sound/items/polaroid2.ogg'), 75, 1, -3)
 
 	pictures_left--
 	src.desc = "A polaroid camera. It has [pictures_left] photos left."

@@ -367,7 +367,7 @@
 						H.icon_state = "l_foot_l"
 					owner.u_equip(owner.shoes)
 			if(ismonkey(owner))
-				H.icon = 'monkey.dmi'
+				H.icon = 'icons/mob/monkey.dmi'
 			var/lol = pick(cardinal)
 			step(H,lol)
 			destspawn = 1
@@ -582,7 +582,7 @@
 ****************************************************/
 
 obj/item/weapon/organ
-	icon = 'human.dmi'
+	icon = 'icons/mob/human.dmi'
 
 obj/item/weapon/organ/New(loc, mob/living/carbon/human/H)
 	..(loc)

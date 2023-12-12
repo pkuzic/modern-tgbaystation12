@@ -4,7 +4,7 @@
 /obj/machinery/artifact
 	name = "alien artifact"
 	desc = "A large alien device."
-	icon = 'anomaly.dmi'
+	icon = 'icons/obj/anomaly.dmi'
 	icon_state = "ano00"
 	var/icon_num = 0
 	anchored = 0
