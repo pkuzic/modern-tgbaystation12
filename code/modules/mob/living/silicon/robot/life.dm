@@ -164,7 +164,8 @@
 	var/obj/item/borg/sight/hud/hud = (locate(/obj/item/borg/sight/hud) in src)
 	if(hud && hud.hud)	hud.hud.process_hud(src)
 
-	if (src.healths)
+	//old piece of code, pre-514 update
+	/*if (src.healths)
 		if (src.stat != 2)
 			switch(health)
 				if(200 to INFINITY)
@@ -181,6 +182,27 @@
 					src.healths.icon_state = "health5"
 				else
 					src.healths.icon_state = "health6"
+		else
+			src.healths.icon_state = "health7"*/
+
+	if (src.healths)
+		if (src.stat != 2)
+			var x = src.health
+
+			if(x >= 200)
+				src.healths.icon_state = "health0"
+			if(x >= 150 && x < 200)
+				src.healths.icon_state = "health1"
+			if(x >= 100 && x < 150)
+				src.healths.icon_state = "health2"
+			if(x >= 50 && x < 100)
+				src.healths.icon_state = "health3"
+			if(x >= 0 && x < 50)
+				src.healths.icon_state = "health4"
+			if(x >= config.health_threshold_dead && x < 50)
+				src.healths.icon_state = "health5"
+			else
+				src.healths.icon_state = "health6"
 		else
 			src.healths.icon_state = "health7"
 
