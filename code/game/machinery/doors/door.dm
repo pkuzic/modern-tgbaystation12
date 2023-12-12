@@ -21,7 +21,7 @@
 	proc/bumpopen(mob/user as mob)
 	proc/update_nearby_tiles(need_rebuild)
 	proc/requiresID()	return 1
-	proc/animate(animation)
+	proc/ss13_animate(animation)
 	proc/open()
 	proc/close()
 
@@ -184,7 +184,7 @@
 		return
 
 
-	animate(animation)
+	ss13_animate(animation)
 		switch(animation)
 			if("opening")
 				if(p_open)

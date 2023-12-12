@@ -35,9 +35,9 @@
 		var/mob/living/carbon/human/H = AM
 		if(H.lying && move_dir == EAST)// || move_dir == WEST)
 			AM.loc = src.loc
-			transform(AM)
+			ss13_transform(AM)
 
-/obj/machinery/transformer/proc/transform(var/mob/living/carbon/human/H)
+/obj/machinery/transformer/proc/ss13_transform(var/mob/living/carbon/human/H)
 	if(stat & (BROKEN|NOPOWER))
 		return
 	if(!transform_dead && H.stat == DEAD)

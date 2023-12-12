@@ -61,7 +61,7 @@
 		return
 
 
-	animate(animation)
+	ss13_animate(animation)
 		switch(animation)
 			if("opening")
 				flick("door_opening", src)

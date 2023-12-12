@@ -40,7 +40,7 @@ proc/listgetindex(var/list/list,index)
 			return list[index]
 	return
 
-proc/islist(list/list)
+proc/ss13_islist(list/list)
 	if(istype(list))
 		return 1
 	return 0
