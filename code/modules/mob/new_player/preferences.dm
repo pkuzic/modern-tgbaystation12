@@ -276,7 +276,7 @@ datum/preferences
 
 		dat += "<b>Flavor Text</b><br>"
 		dat += "<a href='byond://?src=\ref[user];preference=flavor_text;task=input'>Change</a><br>"
-		if(lentext(flavor_text) <= 40)
+		if(length(flavor_text) <= 40)
 			dat += "[flavor_text]"
 		else
 			dat += "[copytext(flavor_text, 1, 37)]...<br>"
@@ -403,14 +403,14 @@ datum/preferences
 
 		HTML += "<a href=\"byond://?src=\ref[user];preference=records;task=med_record\">Medical Records</a><br>"
 
-		if(lentext(med_record) <= 40)
+		if(length(med_record) <= 40)
 			HTML += "[med_record]"
 		else
 			HTML += "[copytext(med_record, 1, 37)]..."
 
 		HTML += "<br><br><a href=\"byond://?src=\ref[user];preference=records;task=sec_record\">Security Records</a><br>"
 
-		if(lentext(sec_record) <= 40)
+		if(length(sec_record) <= 40)
 			HTML += "[sec_record]<br>"
 		else
 			HTML += "[copytext(sec_record, 1, 37)]...<br>"

@@ -351,7 +351,7 @@
 				return
 
 			for(var/tone in tones)
-				var/len = lentext(tone)
+				var/len = length(tone)
 
 				if(len==0)
 					break
@@ -616,7 +616,7 @@
 		var/runmainloop = 1
 		while(runmainloop)
 			var/outstr = ""
-			while(lentext(outstr + nextadd) < 50)
+			while(length(outstr + nextadd) < 50)
 				outstr += nextadd + ","
 
 				if(sourcelist.len == 0)
@@ -628,7 +628,7 @@
 				sourcelist.Cut(1,2)
 
 			//Remove last comma
-			outstr = copytext(outstr, 1, lentext(outstr))
+			outstr = copytext(outstr, 1, length(outstr))
 
 			//Add to output
 			outputlist.Add(outstr)
@@ -687,7 +687,7 @@
 			var/list/inputlist = dd_text2list(input, "\n")
 
 			if(copytext(inputlist[1], 1, 4) == "BPM")
-				var/newbpm = text2num(copytext(input,5,lentext(inputlist[1])+1))
+				var/newbpm = text2num(copytext(input,5,length(inputlist[1])+1))
 
 				if(newbpm > 0 && newbpm <= 600)
 					currentsong.tempo = 10/(newbpm/60)
@@ -701,7 +701,7 @@
 			input = dd_list2text(inputlist, ",\n")
 
 			//Remove last comma
-			//input = copytext(input, 1, lentext(input))
+			//input = copytext(input, 1, length(input))
 
 			currentsong.sourcestring = input
 
@@ -731,7 +731,7 @@
 			input = dd_replacetext(input, " ", "")
 			input = dd_replacetext(input, "\t", "")
 
-			if(lentext(input)>4000)
+			if(length(input)>4000)
 				statusmsg("Editor Error: Song too long, end was cutoff (max 4000)")
 				input = copytext(input, 1, 4001)
 
