@@ -338,9 +338,9 @@ FUCK YOU MORE FAT CODE -Hawk*/
 
 		if ((blind && stat != 2))
 			if ((blinded))
-				blind.layer = 18
+				blind.invisibility = 0
 			else
-				blind.layer = 0
+				blind.invisibility = 127
 
 				if (disabilities & NEARSIGHTED)
 					client.screen += global_hud.vimpaired

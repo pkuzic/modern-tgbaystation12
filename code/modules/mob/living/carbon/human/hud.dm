@@ -349,10 +349,11 @@
 	mymob.blind = new /obj/screen()
 	mymob.blind.icon = 'icons/mob/screen1_full.dmi'
 	mymob.blind.icon_state = "blackimageoverlay"
-	mymob.blind.name = " "
+	mymob.blind.name = "black screen"
 	mymob.blind.screen_loc = "1,1"
 	mymob.blind.mouse_opacity = 0
-	mymob.blind.layer = 0
+	mymob.blind.invisibility = 127
+	mymob.blind.layer = 18
 
 	mymob.damageoverlay = new /obj/screen()
 	mymob.damageoverlay.icon = 'icons/mob/screen1_full.dmi'

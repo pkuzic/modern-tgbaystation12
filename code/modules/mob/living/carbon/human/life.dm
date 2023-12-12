@@ -1403,9 +1403,13 @@
 					if(260 to 280)			bodytemp.icon_state = "temp-3"
 					else					bodytemp.icon_state = "temp-4"
 
-			if(blind)
+			/*if(blind)
 				if(blinded)		blind.layer = 18
-				else			blind.layer = 0
+				else			blind.layer = 0*/
+
+			if(blind) // I am not totally aware whether Byond have changed how the layers work, though this turnaround seems to be working perfectly fine.
+				if(blinded)		blind.invisibility = 0
+				else			blind.invisibility = 127
 
 			if( disabilities & NEARSIGHTED && !istype(glasses, /obj/item/clothing/glasses/regular) )
 				client.screen += global_hud.vimpaired
