@@ -38,7 +38,7 @@
 /obj/item/clothing/head/hardhat/orange
 	icon_state = "hardhat0_orange"
 	item_state = "hardhat0_orange"
-	color = "orange"
+	ss13_color = "orange"
 
 /obj/item/clothing/head/hardhat/red
 	icon_state = "hardhat0_red"
@@ -60,5 +60,5 @@
 /obj/item/clothing/head/hardhat/dblue
 	icon_state = "hardhat0_dblue"
 	item_state = "hardhat0_dblue"
-	color = "dblue"
+	ss13_color = "dblue"
 

@@ -11,7 +11,7 @@
 /obj/item/clothing/shoes/mime
 	name = "mime shoes"
 	icon_state = "mime"
-	color = "mime"
+	ss13_color = "mime"
 
 /obj/item/clothing/shoes/swat
 	name = "\improper SWAT shoes"
@@ -69,21 +69,21 @@
 	icon_state = "clown"
 	item_state = "clown_shoes"
 	slowdown = SHOES_SLOWDOWN+1
-	color = "clown"
+	ss13_color = "clown"
 
 /obj/item/clothing/shoes/jackboots
 	name = "jackboots"
 	desc = "Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
 	icon_state = "jackboots"
 	item_state = "jackboots"
-	color = "hosred"
+	ss13_color = "hosred"
 
 /obj/item/clothing/shoes/cult
 	name = "boots"
 	desc = "A pair of boots worn by the followers of Nar-Sie."
 	icon_state = "cult"
 	item_state = "cult"
-	color = "cult"
+	ss13_color = "cult"
 
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECITON_TEMPERATURE

@@ -4,7 +4,7 @@
 	icon_state = "cargosoft"
 	flags = FPRINT|TABLEPASS|HEADCOVERSEYES
 	item_state = "helmet"
-	color = "cargo"
+	ss13_color = "cargo"
 	var/flipped = 0
 
 	dropped()
@@ -30,58 +30,58 @@
 	name = "red cap"
 	desc = "It's a baseball hat in a tasteless red colour."
 	icon_state = "redsoft"
-	color = "red"
+	ss13_color = "red"
 
 /obj/item/clothing/head/soft/blue
 	name = "blue cap"
 	desc = "It's a baseball hat in a tasteless blue colour."
 	icon_state = "bluesoft"
-	color = "blue"
+	ss13_color = "blue"
 
 /obj/item/clothing/head/soft/green
 	name = "green cap"
 	desc = "It's a baseball hat in a tasteless green colour."
 	icon_state = "greensoft"
-	color = "green"
+	ss13_color = "green"
 
 /obj/item/clothing/head/soft/yellow
 	name = "yellow cap"
 	desc = "It's a baseball hat in a tasteless yellow colour."
 	icon_state = "yellowsoft"
-	color = "yellow"
+	ss13_color = "yellow"
 
 /obj/item/clothing/head/soft/grey
 	name = "grey cap"
 	desc = "It's a baseball hat in a tasteful grey colour."
 	icon_state = "greysoft"
-	color = "grey"
+	ss13_color = "grey"
 
 /obj/item/clothing/head/soft/orange
 	name = "orange cap"
 	desc = "It's a baseball hat in a tasteless orange colour."
 	icon_state = "orangesoft"
-	color = "orange"
+	ss13_color = "orange"
 
 /obj/item/clothing/head/soft/mime
 	name = "white cap"
 	desc = "It's a baseball hat in a tasteless white colour."
 	icon_state = "mimesoft"
-	color = "mime"
+	ss13_color = "mime"
 
 /obj/item/clothing/head/soft/purple
 	name = "purple cap"
 	desc = "It's a baseball hat in a tasteless purple colour."
 	icon_state = "purplesoft"
-	color = "purple"
+	ss13_color = "purple"
 
 /obj/item/clothing/head/soft/rainbow
 	name = "rainbow cap"
 	desc = "It's a baseball hat in a bright rainbow of colors."
 	icon_state = "rainbowsoft"
-	color = "rainbow"
+	ss13_color = "rainbow"
 
 /obj/item/clothing/head/soft/sec
 	name = "security cap"
 	desc = "It's baseball hat in tasteful red colour."
 	icon_state = "secsoft"
-	color = "sec"
+	ss13_color = "sec"

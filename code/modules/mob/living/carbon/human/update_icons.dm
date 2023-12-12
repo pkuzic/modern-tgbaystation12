@@ -189,7 +189,7 @@ proc/get_damage_icon_part(damage_state, body_part)
 	previous_damage_appearance = damage_appearance
 
 	var/icon/standing = new /icon('icons/mob/dam_human.dmi', "00")
-	var/icon/lying = new /icon('dam_human.dmi', "00-2")
+	var/icon/lying = new /icon('icons/mob/dam_human.dmi', "00-2")
 
 	var/image/standing_image = new /image("icon" = standing)
 	var/image/lying_image = new /image("icon" = lying)

@@ -265,13 +265,13 @@
 	name = "pink swimsuit"
 	desc = "A rather skimpy pink swimsuit."
 	icon_state = "stripper_p_under"
-	color = "stripper_p"
+	ss13_color = "stripper_p"
 
 /obj/item/clothing/under/stripper/stripper_green
 	name = "green swimsuit"
 	desc = "A rather skimpy green swimsuit."
 	icon_state = "stripper_g_under"
-	color = "stripper_g"
+	ss13_color = "stripper_g"
 
 /obj/item/clothing/suit/stripper/stripper_pink
 	name = "pink skimpy dress"

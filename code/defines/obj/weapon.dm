@@ -558,7 +558,7 @@
 	name = "\improper Messa's Tear leaf"
 	singular_name = "Messa's Tear leaf"
 	desc = "A cold leaf that is rubbed on burns."
-	icon = 'iconss/obj/harvest.dmi'
+	icon = 'icons/obj/harvest.dmi'
 	icon_state = "ambrosiavulgaris"
 	heal_burn = 7
 
@@ -731,23 +731,23 @@
 	item_state = "coil_red2"
 
 /obj/item/weapon/cable_coil/yellow
-	color = "yellow"
+	ss13_color = "yellow"
 	icon_state = "coil_yellow"
 
 /obj/item/weapon/cable_coil/blue
-	color = "blue"
+	ss13_color = "blue"
 	icon_state = "coil_blue"
 
 /obj/item/weapon/cable_coil/green
-	color = "green"
+	ss13_color = "green"
 	icon_state = "coil_green"
 
 /obj/item/weapon/cable_coil/pink
-	color = "pink"
+	ss13_color = "pink"
 	icon_state = "coil_pink"
 
 /obj/item/weapon/cable_coil/orange
-	color = "orange"
+	ss13_color = "orange"
 	icon_state = "coil_orange"
 
 /obj/item/weapon/cable_coil/cyan
@@ -755,11 +755,11 @@
 	icon_state = "coil_cyan"
 
 /obj/item/weapon/cable_coil/white
-	color = "white"
+	ss13_color = "white"
 	icon_state = "coil_white"
 
 /obj/item/weapon/cable_coil/random/New()
-	color = pick("red","yellow","green","blue","pink")
+	ss13_color = pick("red","yellow","green","blue","pink")
 	icon_state = "coil_[color]"
 	..()
 

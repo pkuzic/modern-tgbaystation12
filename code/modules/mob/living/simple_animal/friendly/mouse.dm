@@ -19,7 +19,7 @@
 	response_disarm = "gently pushes aside the"
 	response_harm   = "splats the"
 	density = 0
-	var/color //brown, gray and white, leave blank for random
+	var/ss13_color //brown, gray and white, leave blank for random
 	layer = 2.5		//so they can hide under objects
 	min_oxy = 16 //Require atleast 16kPA oxygen
 	minbodytemp = 223		//Below -50 Degrees Celcius
@@ -159,7 +159,7 @@ mob/living/simple_animal/mouse/restrained() //Hotfix to stop mice from doing thi
 	icon_state = "mouse_gray"
 
 /mob/living/simple_animal/mouse/brown
-	color = "brown"
+	ss13_color = "brown"
 	icon_state = "mouse_brown"
 
 //TOM IS ALIVE! SQUEEEEEEEE~K :)

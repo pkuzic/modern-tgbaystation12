@@ -4,7 +4,7 @@
 	icon = 'icons/obj/clothing/ties.dmi'
 	icon_state = "bluetie"
 	item_state = ""	//no inhands
-	color = "bluetie"
+	ss13_color = "bluetie"
 	flags = FPRINT | TABLEPASS
 	slot_flags = 0
 	w_class = 2.0
@@ -12,24 +12,24 @@
 /obj/item/clothing/tie/blue
 	name = "blue tie"
 	icon_state = "bluetie"
-	color = "bluetie"
+	ss13_color = "bluetie"
 
 /obj/item/clothing/tie/red
 	name = "red tie"
 	icon_state = "redtie"
-	color = "redtie"
+	ss13_color = "redtie"
 
 /obj/item/clothing/tie/horrible
 	name = "horrible tie"
 	desc = "A neosilk clip-on tie. This one is disgusting."
 	icon_state = "horribletie"
-	color = "horribletie"
+	ss13_color = "horribletie"
 
 /obj/item/clothing/tie/stethoscope
 	name = "stethoscope"
 	desc = "An outdated medical apparatus for listening to the sounds of the human body. It also makes you look like you know what you're doing."
 	icon_state = "stethoscope"
-	color = "stethoscope"
+	ss13_color = "stethoscope"
 
 /obj/item/clothing/tie/stethoscope/attack(mob/living/carbon/human/M, mob/living/user)
 	if(ishuman(M) && isliving(user))
@@ -69,27 +69,27 @@
 	name = "shoulder holster"
 	desc = "A handgun holster."
 	icon_state = "holster"
-	color = "holster"
+	ss13_color = "holster"
 	var/obj/item/weapon/gun/holstered = null
 
 /obj/item/clothing/tie/holster/armpit
 	name = "shoulder holster"
 	desc = "A worn-out handgun holster. Perfect for concealed carry"
 	icon_state = "holster"
-	color = "holster"
+	ss13_color = "holster"
 
 /obj/item/clothing/tie/holster/waist
 	name = "shoulder holster"
 	desc = "A handgun holster. Made of expensive leather."
 	icon_state = "holster"
-	color = "holster_low"
+	ss13_color = "holster_low"
 
 //Medals
 /obj/item/clothing/tie/medal
 	name = "bronze medal"
 	desc = "A bronze medal."
 	icon_state = "bronze"
-	color = "bronze"
+	ss13_color = "bronze"
 
 /obj/item/clothing/tie/medal/conduct
 	name = "distinguished conduct medal"
@@ -108,7 +108,7 @@
 	name = "silver medal"
 	desc = "A silver medal."
 	icon_state = "silver"
-	color = "silver"
+	ss13_color = "silver"
 
 /obj/item/clothing/tie/medal/silver/valor
 	name = "medal of valor"
@@ -122,7 +122,7 @@
 	name = "gold medal"
 	desc = "A prestigious golden medal."
 	icon_state = "gold"
-	color = "gold"
+	ss13_color = "gold"
 
 /obj/item/clothing/tie/medal/gold/captain
 	name = "medal of captaincy"

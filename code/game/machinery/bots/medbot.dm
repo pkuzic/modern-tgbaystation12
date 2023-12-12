@@ -531,7 +531,7 @@
 		src.build_step++
 		user << "You add the health sensor to [src]!"
 		src.name = "First aid/robot arm/health analyzer assembly"
-		src.overlays += image('aibots.dmi', "na_scanner")
+		src.overlays += image('icons/obj/aibots.dmi', "na_scanner")
 		del(W)
 
 	else if((isprox(W)) && (src.build_step == 1))

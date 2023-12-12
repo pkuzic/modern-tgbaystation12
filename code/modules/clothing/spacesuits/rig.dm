@@ -8,7 +8,7 @@
 	allowed = list(/obj/item/device/flashlight)
 	var/brightness_on = 4 //luminosity when on
 	var/on = 0
-	color = "engineering" //Determines used sprites: rig[on]-[color] and rig[on]-[color]2 (lying down sprite)
+	ss13_color = "engineering" //Determines used sprites: rig[on]-[color] and rig[on]-[color]2 (lying down sprite)
 	icon_action_button = "action_hardhat"
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECITON_TEMPERATURE
@@ -53,7 +53,7 @@
 	name = "advanced hardsuit helmet"
 	icon_state = "rig0-white"
 	item_state = "ce_helm"
-	color = "white"
+	ss13_color = "white"
 
 /obj/item/clothing/suit/space/rig/elite
 	icon_state = "rig-white"
@@ -66,7 +66,7 @@
 	name = "mining hardsuit helmet"
 	icon_state = "rig0-mining"
 	item_state = "mining_helm"
-	color = "mining"
+	ss13_color = "mining"
 
 /obj/item/clothing/suit/space/rig/mining
 	icon_state = "rig-mining"
@@ -79,7 +79,7 @@
 	name = "blood-red hardsuit helmet"
 	icon_state = "rig0-syndi"
 	item_state = "syndie_helm"
-	color = "syndi"
+	ss13_color = "syndi"
 	armor = list(melee = 60, bullet = 50, laser = 30,energy = 15, bomb = 35, bio = 100, rad = 60)
 
 /obj/item/clothing/suit/space/rig/syndi
@@ -95,7 +95,7 @@
 /obj/item/clothing/head/helmet/space/rig/security
 	name = "security hardsuit helmet"
 	icon_state = "rig0-security"
-	color = "security"
+	ss13_color = "security"
 	armor = list(melee = 60, bullet = 10, laser = 30, energy = 5, bomb = 45, bio = 100, rad = 10)
 
 /obj/item/clothing/suit/space/rig/security
@@ -112,7 +112,7 @@
 	name = "gem-encrusted hardsuit helmet"
 	icon_state = "rig0-wiz"
 	item_state = "wiz_helm"
-	color = "wiz"
+	ss13_color = "wiz"
 	unacidable = 1 //No longer shall our kind be foiled by lone chemists with spray bottles!
 	armor = list(melee = 40, bullet = 20, laser = 20,energy = 20, bomb = 35, bio = 100, rad = 60)
 
@@ -131,7 +131,7 @@
 	name = "atmospherics pressure suit helmet"
 	icon_state = "rig0-atmos"
 	item_state = "atmos_helm"
-	color = "atmos"
+	ss13_color = "atmos"
 	flags = STOPSPRESSUREDMAGE
 	armor = list(melee = 40, bullet = 0, laser = 0, energy = 0, bomb = 25, bio = 100, rad = 0)
 	gas_transfer_coefficient = 0

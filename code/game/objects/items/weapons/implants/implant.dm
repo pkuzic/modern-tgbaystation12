@@ -2,7 +2,7 @@
 	name = "implant"
 	var/implanted = null
 	var/mob/imp_in = null
-	color = "b"
+	ss13_color = "b"
 	var/allow_reagents = 0
 
 	proc/trigger(emote, source as mob)
